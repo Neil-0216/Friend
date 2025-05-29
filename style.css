@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+background-color: rgb(204, 255, 204);
+}
+
+/*navbar*/
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    padding-left: 30px;
+    height: 156px;
+    width: 156px;
+    margin-top: 30px;
+}
+
+.navbar {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 10px;
+
+}
+
+nav a {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgb(9, 151, 33);
+}
+
+/*banner*/
+.banner img{
+    height: 700px;
+    width: 100%;
+}
+
+
+.Intro-description{
+
+    padding:16px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    margin-right: 20px;
+    margin-left: 40px;
+    justify-content: center;
+}
+.Intro-description h1{
+margin-bottom: 20px;
+color: rgb(0, 75, 0);
+font-size: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.Intro-description p{
+    line-height: 40px;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.Intro-description button{
+    margin-top: 20px;
+    background:white ;
+    height: 60px;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 20px;
+    border-style: none;
+    color: rgb(9, 151, 33);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.Intro-description button:hover{
+    background: rgb(9, 151, 33);
+    color: white;
+}
+.bottom {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    font-size: 20px;
+    color: rgb(0, 59, 0);
+    background-color: white;
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
+    .logo img {
+        padding-left: 0;
+        margin-top: 20px;
+        height: 120px;
+        width: 120px;
+        padding-bottom: 10px;
+    }
+    
+    nav a {
+        padding: 25px 100px;
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+
+    }
+    .banner img{
+        height: 200px;
+        width: 100%;
+    }
+    .Intro-description{
+    margin: 10px;
+    }
+    .card img {
+        width: 350px;
+        height: 200px;
+    }
+    .card {
+        flex: 1;
+        min-width: 350px;
+        max-width: 350px;
+
+    }
+}
