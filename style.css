@@ -44,14 +44,14 @@ nav a {
     text-decoration: none;
     padding-top: 30px;
     text-align: center;
-    font-family: "Galindo", sans-serif;;
+    font-family: "Galindo", sans-serif;
     padding-left: 10px;
     margin-right: 30px;
 }
 
 nav a:hover {
     cursor: pointer;
-    color: rgb(255, 208, 0);
+    color: rgb(255, 196, 0);
 }
 
 /*banner*/
@@ -75,12 +75,12 @@ nav a:hover {
 .Intro-description h1{
 margin-bottom: 20px;
 color: rgb(0, 75, 0);
-font-size: 70px;
+font-size: 60px;
 font-family: "Galindo", sans-serif;
 }
 .Intro-description h2{
     margin-bottom: 20px;
-    color: rgb(0, 75, 0);
+    color: rgb(255, 196, 0);
     font-size: 40px;
     font-family: "Galindo", sans-serif;
 }
@@ -90,24 +90,31 @@ font-family: "Galindo", sans-serif;
     font-family: "Galindo", sans-serif;
     font-size: 25px;
     text-align: justify;
+
+}
+
+.Intro-description b{
+    font-size: 30px;
+    padding-bottom: 15px;
+    
 }
 
 .Intro-description button{
     margin-top: 20px;
-    background:white ;
+    background:rgb(9, 151, 33) ;
     height: 60px;
     width: 300px;
     font-size: 30px;
     border-radius: 20px;
     border-style: none;
-    color: rgb(9, 151, 33);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 208, 0);
+    font-family: "Galindo", sans-serif;
     justify-content: center;
     align-items: center;
 }
 .Intro-description button:hover{
-    background: rgb(9, 151, 33);
-    color: white;
+    background:  rgb(255, 196, 0);
+    color: rgb(9, 151, 33);
 }
 .bottom {
     width: 100%;
@@ -154,6 +161,59 @@ footer{
     background: rgb(0, 59, 0);
     width: 100%;
 }
+
+.formcontainer {
+    padding: 30px;
+    margin-top: 30px;
+
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.form label{
+    padding-right: 100px;
+    width: 100px;
+    font-family: "Galindo", sans-serif;
+    color:rgb(0, 59, 0) ;
+}
+.form input,.form select,.form textarea{
+    width: 90%;
+    flex: 1;
+    border: 5px solid rgb(9, 151, 33) ;
+    height: 30px;
+    border-radius: 10px;
+    font-family: "Galindo", sans-serif;
+    font-weight: 500;
+}
+.form :placeholder-shown{
+    padding-left: 5px;
+    
+}
+.form textarea{
+    height: 120px;
+    resize: none;
+}
+.submit button {
+    background:  rgb(9, 151, 33);
+    color: rgb(255, 196, 0);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-family: "Galindo", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    justify-self: end;
+}
+
+.submit button:hover{
+    background:  rgb(255, 196, 0);
+    color: rgb(9, 151, 33);
+}
 @media screen and (max-width: 600px) {
     .navbar {
         display: flex;
@@ -191,6 +251,8 @@ footer{
         width: 100%;
         justify-content: center;
         margin-top: 5px;
+        border-top: 2px solid;
+        border-color: rgb(255, 196, 0);
 
     }
     .banner img{
@@ -208,6 +270,34 @@ footer{
         flex: 1;
         min-width: 350px;
         max-width: 350px;
+}
+.Intro-description h1{
+    font-size: 50px;
+    }
+    .Intro-description h2{
+        font-size: 30px;
+    }
+    .Intro-description p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .Intro-description button{
+        font-size: 15px;
+        width: 130px;
+        height: 50px;
+    }
+    .Intro-description b{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }    
 
+    .form{
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .submit button {
+        width: 30%;
+        
     }
 }
