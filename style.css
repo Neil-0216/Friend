@@ -297,7 +297,7 @@ footer{
         box-sizing: border-box;
     }
     .submit button {
-        width: 30%;
+        width: 100%;
         
     }
 }
