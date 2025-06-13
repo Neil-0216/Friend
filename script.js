@@ -25,6 +25,11 @@
             document.getElementById('lname1').focus();
             return false;
         }
+        else if (firstName===lastName){
+            alert("Please enter your real last name");
+            document.getElementById('lname1').focus();
+            return false;
+        }
         else if (telephone === "") {
             alert("Please enter number only in Telephone No.");
             document.getElementById('tel1').focus();
