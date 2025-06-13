@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Coiny&family=DynaPuff:wght@400..700&family=Galindo&family=Griffy&family=Lexend+Deca:wght@100..900&family=Lobster&family=Mogra&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500&family=Ranchers&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -36,69 +37,79 @@
 <div class="formcontainer">
     <div class="form">
         <label>First Name:</label>
-        <input type="text" placeholder="Your Name">
+        <input id="fname1" type="text" placeholder="Your Name">
     </div>
 
     <div class="form">
         <label>Last Name:</label>
-        <input type="text" placeholder="Your Last Name">
+        <input id="lname1" type="text" placeholder="Your Last Name">
     </div>
 
     <div class="form">
-        <label>Cellphone:</label>
-        <input type="text" placeholder="format: 09120132031">
+        <label>Telephone:</label>
+        <input id="tel1" type="text" placeholder="format: 09120132031">
     </div>
 
     <div class="form">
         <label>Email:</label>
-        <input type="text" placeholder="sample: sample123@email.com">
+        <input id="email1" type="text" placeholder="sample: sample123@email.com">
     </div>
 
     <div class="form">
         <label>Organization:</label>
-        <input type="text" ">
+        <input id="org1" type="text" ">
     </div>
 
     <div class="form">
         <label>Province:</label>
-        <select>
+        <select id="prob1">
         <option>Select your Province:</option>
-        <option>Davao Del Norte</option>
+        <option>Davao del Norte</option>
+        <option>Davao del Sur</option>
+        <option>Davao de Oro </option>
         </select>
     </div>
 
     <div class="form">
         <label>City/Municipality:</label>
-        <select>
+        <select id="city1">
         <option>Select your Municipality or City</option>
         <option>Tagum City</option>
+        <option>Panabo City</option>
+        <option>Municipality Of Carmen</option>
         </select>
     </div>
 
     <div class="form">
         <label>Barangay:</label>
-        <select>
+        <select id="bar1">
         <option>Select your Barangay:</option>
-        <option>La Filipina</option>
+        <option>Mankilam</option>
+        <option>Madaum</option>
+        <option>Magugpo North</option>
+        <option>La Filipina</option>s
         </select>
     </div>
     
     <div class="form">
         <label>Street:</label>
-        <input type="text" ">
+        <input id="street1" type="text" ">
     </div>
 
-    <div class="form">
+    <div class="form1">
         <label>Message:</label>
-        <textarea type="text" placeholder="write something..."></textarea>
+        <textarea id="mes1" type="text" placeholder="write something..."></textarea>
     </div>
 
-    <div class="submit">
-        <button type="submit">Submit</button>
+    <div class="submit" onclick="Submit()">
+        <button id="submit1" type="submit">Submit</button>
 </div>
 </div>
+
 
 
 <footer>Copyright(c) Friend 2025</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
