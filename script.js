@@ -26,7 +26,7 @@
             return false;
         }
         else if (firstName===lastName){
-            alert("Please enter your real last name");
+            alert("Please check your First Name/Last Name");
             document.getElementById('lname1').focus();
             return false;
         }
