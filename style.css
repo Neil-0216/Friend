@@ -8,7 +8,6 @@ body {
 background-color: rgb(204, 255, 204);
 }
 
-/*navbar*/
 
 .logo {
     margin-right: auto;
@@ -55,7 +54,7 @@ nav a:hover {
     color: rgb(255, 196, 0);
 }
 
-/*banner*/
+
 .banner img{
     height: 700px;
     width: 100%;
@@ -249,6 +248,7 @@ footer{
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
+        width: 100%;
     }
     
     nav {
@@ -274,13 +274,13 @@ footer{
     }
     
     nav a {
-        padding: 10px 400px;
         margin-right: 0;
         width: 100%;
         justify-content: center;
         margin-top: 5px;
         border-top: 2px solid;
         border-color: green;
+        border-width: 100%;
         font-size: 15px;
 
     }
